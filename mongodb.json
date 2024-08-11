@@ -1,0 +1,812 @@
+[
+    {
+        "s_no": 1,
+        "cityname": "Mumbai",
+        "users": {
+            "user42": {"username": "user42", "userrating": 4.5},
+            "user15": {"username": "user15", "userrating": 4.3},
+            "user78": {"username": "user78", "userrating": 4.6}
+        },
+        "hotels": {
+            "user42": {"username": "user42", "hotel_id": 47, "userrating": 4.5},
+            "user15": {"username": "user15", "hotel_id": 47, "userrating": 4.3},
+            "user42": {"username": "user42", "hotel_id": 56, "userrating": 4.6},
+            "user15": {"username": "user15", "hotel_id": 56, "userrating": 4.1}
+        },
+        "tourist_places": {
+            "user78": {"username": "user78", "tourist_id": 47, "userrating": 4.5},
+            "user15": {"username": "user15", "tourist_id": 47, "userrating": 4.3},
+            "user78": {"username": "user78", "tourist_id": 56, "userrating": 4.6},
+            "user15": {"username": "user15", "tourist_id": 56, "userrating": 4.1}
+        },
+        "restaurant": {
+            "user42": {"username": "user42", "res_id": 47, "userrating": 4.5},
+            "user15": {"username": "user15", "res_id": 47, "userrating": 4.3},
+            "user42": {"username": "user42", "res_id": 56, "userrating": 4.6},
+            "user15": {"username": "user15", "res_id": 56, "userrating": 4.1}
+        }
+    },
+    {
+        "s_no": 2,
+        "cityname": "Delhi",
+        "users": {
+            "user22": {"username": "user22", "userrating": 4.4},
+            "user33": {"username": "user33", "userrating": 4.0},
+            "user44": {"username": "user44", "userrating": 4.7}
+        },
+        "hotels": {
+            "user22": {"username": "user22", "hotel_id": 52, "userrating": 4.4},
+            "user33": {"username": "user33", "hotel_id": 52, "userrating": 4.0},
+            "user22": {"username": "user22", "hotel_id": 63, "userrating": 4.7},
+            "user33": {"username": "user33", "hotel_id": 63, "userrating": 4.2}
+        },
+        "tourist_places": {
+            "user44": {"username": "user44", "tourist_id": 52, "userrating": 4.4},
+            "user33": {"username": "user33", "tourist_id": 52, "userrating": 4.0},
+            "user44": {"username": "user44", "tourist_id": 63, "userrating": 4.7},
+            "user33": {"username": "user33", "tourist_id": 63, "userrating": 4.2}
+        },
+        "restaurant": {
+            "user22": {"username": "user22", "res_id": 52, "userrating": 4.4},
+            "user33": {"username": "user33", "res_id": 52, "userrating": 4.0},
+            "user22": {"username": "user22", "res_id": 63, "userrating": 4.7},
+            "user33": {"username": "user33", "res_id": 63, "userrating": 4.2}
+        }
+    },
+    {
+        "s_no": 3,
+        "cityname": "Bangalore",
+        "users": {
+            "user12": {"username": "user12", "userrating": 4.3},
+            "user23": {"username": "user23", "userrating": 4.5},
+            "user34": {"username": "user34", "userrating": 4.7}
+        },
+        "hotels": {
+            "user12": {"username": "user12", "hotel_id": 38, "userrating": 4.3},
+            "user23": {"username": "user23", "hotel_id": 38, "userrating": 4.5},
+            "user12": {"username": "user12", "hotel_id": 49, "userrating": 4.7},
+            "user23": {"username": "user23", "hotel_id": 49, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user34": {"username": "user34", "tourist_id": 38, "userrating": 4.3},
+            "user23": {"username": "user23", "tourist_id": 38, "userrating": 4.5},
+            "user34": {"username": "user34", "tourist_id": 49, "userrating": 4.7},
+            "user23": {"username": "user23", "tourist_id": 49, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user12": {"username": "user12", "res_id": 38, "userrating": 4.3},
+            "user23": {"username": "user23", "res_id": 38, "userrating": 4.5},
+            "user12": {"username": "user12", "res_id": 49, "userrating": 4.7},
+            "user23": {"username": "user23", "res_id": 49, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 4,
+        "cityname": "Hyderabad",
+        "users": {
+            "user54": {"username": "user54", "userrating": 4.8},
+            "user65": {"username": "user65", "userrating": 4.4},
+            "user76": {"username": "user76", "userrating": 4.6}
+        },
+        "hotels": {
+            "user54": {"username": "user54", "hotel_id": 31, "userrating": 4.8},
+            "user65": {"username": "user65", "hotel_id": 31, "userrating": 4.4},
+            "user54": {"username": "user54", "hotel_id": 42, "userrating": 4.6},
+            "user65": {"username": "user65", "hotel_id": 42, "userrating": 4.2}
+        },
+        "tourist_places": {
+            "user76": {"username": "user76", "tourist_id": 31, "userrating": 4.8},
+            "user65": {"username": "user65", "tourist_id": 31, "userrating": 4.4},
+            "user76": {"username": "user76", "tourist_id": 42, "userrating": 4.6},
+            "user65": {"username": "user65", "tourist_id": 42, "userrating": 4.2}
+        },
+        "restaurant": {
+            "user54": {"username": "user54", "res_id": 31, "userrating": 4.8},
+            "user65": {"username": "user65", "res_id": 31, "userrating": 4.4},
+            "user54": {"username": "user54", "res_id": 42, "userrating": 4.6},
+            "user65": {"username": "user65", "res_id": 42, "userrating": 4.2}
+        }
+    },
+    {
+        "s_no": 5,
+        "cityname": "Chennai",
+        "users": {
+            "user89": {"username": "user89", "userrating": 4.2},
+            "user98": {"username": "user98", "userrating": 4.5},
+            "user10": {"username": "user10", "userrating": 4.3}
+        },
+        "hotels": {
+            "user89": {"username": "user89", "hotel_id": 21, "userrating": 4.2},
+            "user98": {"username": "user98", "hotel_id": 21, "userrating": 4.5},
+            "user89": {"username": "user89", "hotel_id": 29, "userrating": 4.3},
+            "user98": {"username": "user98", "hotel_id": 29, "userrating": 4.0}
+        },
+        "tourist_places": {
+            "user10": {"username": "user10", "tourist_id": 21, "userrating": 4.2},
+            "user98": {"username": "user98", "tourist_id": 21, "userrating": 4.5},
+            "user10": {"username": "user10", "tourist_id": 29, "userrating": 4.3},
+            "user98": {"username": "user98", "tourist_id": 29, "userrating": 4.0}
+        },
+        "restaurant": {
+            "user89": {"username": "user89", "res_id": 21, "userrating": 4.2},
+            "user98": {"username": "user98", "res_id": 21, "userrating": 4.5},
+            "user89": {"username": "user89", "res_id": 29, "userrating": 4.3},
+            "user98": {"username": "user98", "res_id": 29, "userrating": 4.0}
+        }
+    },
+    {
+        "s_no": 6,
+        "cityname": "Pune",
+        "users": {
+            "user66": {"username": "user66", "userrating": 4.7},
+            "user77": {"username": "user77", "userrating": 4.2},
+            "user88": {"username": "user88", "userrating": 4.6}
+        },
+        "hotels": {
+            "user66": {"username": "user66", "hotel_id": 37, "userrating": 4.7},
+            "user77": {"username": "user77", "hotel_id": 37, "userrating": 4.2},
+            "user66": {"username": "user66", "hotel_id": 44, "userrating": 4.6},
+            "user77": {"username": "user77", "hotel_id": 44, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user88": {"username": "user88", "tourist_id": 37, "userrating": 4.7},
+            "user77": {"username": "user77", "tourist_id": 37, "userrating": 4.2},
+            "user88": {"username": "user88", "tourist_id": 44, "userrating": 4.6},
+            "user77": {"username": "user77", "tourist_id": 44, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user66": {"username": "user66", "res_id": 37, "userrating": 4.7},
+            "user77": {"username": "user77", "res_id": 37, "userrating": 4.2},
+            "user66": {"username": "user66", "res_id": 44, "userrating": 4.6},
+            "user77": {"username": "user77", "res_id": 44, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 7,
+        "cityname": "Kolkata",
+        "users": {
+            "user17": {"username": "user17", "userrating": 4.4},
+            "user28": {"username": "user28", "userrating": 4.5},
+            "user39": {"username": "user39", "userrating": 4.7}
+        },
+        "hotels": {
+            "user17": {"username": "user17", "hotel_id": 53, "userrating": 4.4},
+            "user28": {"username": "user28", "hotel_id": 53, "userrating": 4.5},
+            "user17": {"username": "user17", "hotel_id": 59, "userrating": 4.7},
+            "user28": {"username": "user28", "hotel_id": 59, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user39": {"username": "user39", "tourist_id": 53, "userrating": 4.4},
+            "user28": {"username": "user28", "tourist_id": 53, "userrating": 4.5},
+            "user39": {"username": "user39", "tourist_id": 59, "userrating": 4.7},
+            "user28": {"username": "user28", "tourist_id": 59, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user17": {"username": "user17", "res_id": 53, "userrating": 4.4},
+            "user28": {"username": "user28", "res_id": 53, "userrating": 4.5},
+            "user17": {"username": "user17", "res_id": 59, "userrating": 4.7},
+            "user28": {"username": "user28", "res_id": 59, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 8,
+        "cityname": "Jaipur",
+        "users": {
+            "user11": {"username": "user11", "userrating": 4.6},
+            "user22": {"username": "user22", "userrating": 4.3},
+            "user33": {"username": "user33", "userrating": 4.7}
+        },
+        "hotels": {
+            "user11": {"username": "user11", "hotel_id": 34, "userrating": 4.6},
+            "user22": {"username": "user22", "hotel_id": 34, "userrating": 4.3},
+            "user11": {"username": "user11", "hotel_id": 41, "userrating": 4.7},
+            "user22": {"username": "user22", "hotel_id": 41, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user33": {"username": "user33", "tourist_id": 34, "userrating": 4.6},
+            "user22": {"username": "user22", "tourist_id": 34, "userrating": 4.3},
+            "user33": {"username": "user33", "tourist_id": 41, "userrating": 4.7},
+            "user22": {"username": "user22", "tourist_id": 41, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user11": {"username": "user11", "res_id": 34, "userrating": 4.6},
+            "user22": {"username": "user22", "res_id": 34, "userrating": 4.3},
+            "user11": {"username": "user11", "res_id": 41, "userrating": 4.7},
+            "user22": {"username": "user22", "res_id": 41, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 9,
+        "cityname": "Ahmedabad",
+        "users": {
+            "user44": {"username": "user44", "userrating": 4.5},
+            "user55": {"username": "user55", "userrating": 4.2},
+            "user66": {"username": "user66", "userrating": 4.6}
+        },
+        "hotels": {
+            "user44": {"username": "user44", "hotel_id": 27, "userrating": 4.5},
+            "user55": {"username": "user55", "hotel_id": 27, "userrating": 4.2},
+            "user44": {"username": "user44", "hotel_id": 35, "userrating": 4.6},
+            "user55": {"username": "user55", "hotel_id": 35, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user66": {"username": "user66", "tourist_id": 27, "userrating": 4.5},
+            "user55": {"username": "user55", "tourist_id": 27, "userrating": 4.2},
+            "user66": {"username": "user66", "tourist_id": 35, "userrating": 4.6},
+            "user55": {"username": "user55", "tourist_id": 35, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user44": {"username": "user44", "res_id": 27, "userrating": 4.5},
+            "user55": {"username": "user55", "res_id": 27, "userrating": 4.2},
+            "user44": {"username": "user44", "res_id": 35, "userrating": 4.6},
+            "user55": {"username": "user55", "res_id": 35, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 10,
+        "cityname": "Surat",
+        "users": {
+            "user34": {"username": "user34", "userrating": 4.4},
+            "user45": {"username": "user45", "userrating": 4.5},
+            "user56": {"username": "user56", "userrating": 4.7}
+        },
+        "hotels": {
+            "user34": {"username": "user34", "hotel_id": 50, "userrating": 4.4},
+            "user45": {"username": "user45", "hotel_id": 50, "userrating": 4.5},
+            "user34": {"username": "user34", "hotel_id": 57, "userrating": 4.7},
+            "user45": {"username": "user45", "hotel_id": 57, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user56": {"username": "user56", "tourist_id": 50, "userrating": 4.4},
+            "user45": {"username": "user45", "tourist_id": 50, "userrating": 4.5},
+            "user56": {"username": "user56", "tourist_id": 57, "userrating": 4.7},
+            "user45": {"username": "user45", "tourist_id": 57, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user34": {"username": "user34", "res_id": 50, "userrating": 4.4},
+            "user45": {"username": "user45", "res_id": 50, "userrating": 4.5},
+            "user34": {"username": "user34", "res_id": 57, "userrating": 4.7},
+            "user45": {"username": "user45", "res_id": 57, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 11,
+        "cityname": "Lucknow",
+        "users": {
+            "user29": {"username": "user29", "userrating": 4.6},
+            "user38": {"username": "user38", "userrating": 4.2},
+            "user49": {"username": "user49", "userrating": 4.7}
+        },
+        "hotels": {
+            "user29": {"username": "user29", "hotel_id": 24, "userrating": 4.6},
+            "user38": {"username": "user38", "hotel_id": 24, "userrating": 4.2},
+            "user29": {"username": "user29", "hotel_id": 33, "userrating": 4.7},
+            "user38": {"username": "user38", "hotel_id": 33, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user49": {"username": "user49", "tourist_id": 24, "userrating": 4.6},
+            "user38": {"username": "user38", "tourist_id": 24, "userrating": 4.2},
+            "user49": {"username": "user49", "tourist_id": 33, "userrating": 4.7},
+            "user38": {"username": "user38", "tourist_id": 33, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user29": {"username": "user29", "res_id": 24, "userrating": 4.6},
+            "user38": {"username": "user38", "res_id": 24, "userrating": 4.2},
+            "user29": {"username": "user29", "res_id": 33, "userrating": 4.7},
+            "user38": {"username": "user38", "res_id": 33, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 12,
+        "cityname": "Kanpur",
+        "users": {
+            "user48": {"username": "user48", "userrating": 4.4},
+            "user57": {"username": "user57", "userrating": 4.5},
+            "user68": {"username": "user68", "userrating": 4.7}
+        },
+        "hotels": {
+            "user48": {"username": "user48", "hotel_id": 36, "userrating": 4.4},
+            "user57": {"username": "user57", "hotel_id": 36, "userrating": 4.5},
+            "user48": {"username": "user48", "hotel_id": 43, "userrating": 4.7},
+            "user57": {"username": "user57", "hotel_id": 43, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user68": {"username": "user68", "tourist_id": 36, "userrating": 4.4},
+            "user57": {"username": "user57", "tourist_id": 36, "userrating": 4.5},
+            "user68": {"username": "user68", "tourist_id": 43, "userrating": 4.7},
+            "user57": {"username": "user57", "tourist_id": 43, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user48": {"username": "user48", "res_id": 36, "userrating": 4.4},
+            "user57": {"username": "user57", "res_id": 36, "userrating": 4.5},
+            "user48": {"username": "user48", "res_id": 43, "userrating": 4.7},
+            "user57": {"username": "user57", "res_id": 43, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 13,
+        "cityname": "Nagpur",
+        "users": {
+            "user19": {"username": "user19", "userrating": 4.2},
+            "user28": {"username": "user28", "userrating": 4.6},
+            "user37": {"username": "user37", "userrating": 4.7}
+        },
+        "hotels": {
+            "user19": {"username": "user19", "hotel_id": 15, "userrating": 4.2},
+            "user28": {"username": "user28", "hotel_id": 15, "userrating": 4.6},
+            "user19": {"username": "user19", "hotel_id": 23, "userrating": 4.7},
+            "user28": {"username": "user28", "hotel_id": 23, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user37": {"username": "user37", "tourist_id": 15, "userrating": 4.2},
+            "user28": {"username": "user28", "tourist_id": 15, "userrating": 4.6},
+            "user37": {"username": "user37", "tourist_id": 23, "userrating": 4.7},
+            "user28": {"username": "user28", "tourist_id": 23, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user19": {"username": "user19", "res_id": 15, "userrating": 4.2},
+            "user28": {"username": "user28", "res_id": 15, "userrating": 4.6},
+            "user19": {"username": "user19", "res_id": 23, "userrating": 4.7},
+            "user28": {"username": "user28", "res_id": 23, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 14,
+        "cityname": "Indore",
+        "users": {
+            "user76": {"username": "user76", "userrating": 4.4},
+            "user87": {"username": "user87", "userrating": 4.5},
+            "user98": {"username": "user98", "userrating": 4.7}
+        },
+        "hotels": {
+            "user76": {"username": "user76", "hotel_id": 48, "userrating": 4.4},
+            "user87": {"username": "user87", "hotel_id": 48, "userrating": 4.5},
+            "user76": {"username": "user76", "hotel_id": 55, "userrating": 4.7},
+            "user87": {"username": "user87", "hotel_id": 55, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user98": {"username": "user98", "tourist_id": 48, "userrating": 4.4},
+            "user87": {"username": "user87", "tourist_id": 48, "userrating": 4.5},
+            "user98": {"username": "user98", "tourist_id": 55, "userrating": 4.7},
+            "user87": {"username": "user87", "tourist_id": 55, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user76": {"username": "user76", "res_id": 48, "userrating": 4.4},
+            "user87": {"username": "user87", "res_id": 48, "userrating": 4.5},
+            "user76": {"username": "user76", "res_id": 55, "userrating": 4.7},
+            "user87": {"username": "user87", "res_id": 55, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 15,
+        "cityname": "Patna",
+        "users": {
+            "user58": {"username": "user58", "userrating": 4.5},
+            "user67": {"username": "user67", "userrating": 4.2},
+            "user76": {"username": "user76", "userrating": 4.6}
+        },
+        "hotels": {
+            "user58": {"username": "user58", "hotel_id": 22, "userrating": 4.5},
+            "user67": {"username": "user67", "hotel_id": 22, "userrating": 4.2},
+            "user58": {"username": "user58", "hotel_id": 28, "userrating": 4.6},
+            "user67": {"username": "user67", "hotel_id": 28, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user76": {"username": "user76", "tourist_id": 22, "userrating": 4.5},
+            "user67": {"username": "user67", "tourist_id": 22, "userrating": 4.2},
+            "user76": {"username": "user76", "tourist_id": 28, "userrating": 4.6},
+            "user67": {"username": "user67", "tourist_id": 28, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user58": {"username": "user58", "res_id": 22, "userrating": 4.5},
+            "user67": {"username": "user67", "res_id": 22, "userrating": 4.2},
+            "user58": {"username": "user58", "res_id": 28, "userrating": 4.6},
+            "user67": {"username": "user67", "res_id": 28, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 16,
+        "cityname": "Vadodara",
+        "users": {
+            "user20": {"username": "user20", "userrating": 4.6},
+            "user31": {"username": "user31", "userrating": 4.2},
+            "user42": {"username": "user42", "userrating": 4.7}
+        },
+        "hotels": {
+            "user20": {"username": "user20", "hotel_id": 20, "userrating": 4.6},
+            "user31": {"username": "user31", "hotel_id": 20, "userrating": 4.2},
+            "user20": {"username": "user20", "hotel_id": 30, "userrating": 4.7},
+            "user31": {"username": "user31", "hotel_id": 30, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user42": {"username": "user42", "tourist_id": 20, "userrating": 4.6},
+            "user31": {"username": "user31", "tourist_id": 20, "userrating": 4.2},
+            "user42": {"username": "user42", "tourist_id": 30, "userrating": 4.7},
+            "user31": {"username": "user31", "tourist_id": 30, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user20": {"username": "user20", "res_id": 20, "userrating": 4.6},
+            "user31": {"username": "user31", "res_id": 20, "userrating": 4.2},
+            "user20": {"username": "user20", "res_id": 30, "userrating": 4.7},
+            "user31": {"username": "user31", "res_id": 30, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 17,
+        "cityname": "Nashik",
+        "users": {
+            "user10": {"username": "user10", "userrating": 4.3},
+            "user21": {"username": "user21", "userrating": 4.5},
+            "user32": {"username": "user32", "userrating": 4.7}
+        },
+        "hotels": {
+            "user10": {"username": "user10", "hotel_id": 19, "userrating": 4.3},
+            "user21": {"username": "user21", "hotel_id": 19, "userrating": 4.5},
+            "user10": {"username": "user10", "hotel_id": 25, "userrating": 4.7},
+            "user21": {"username": "user21", "hotel_id": 25, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user32": {"username": "user32", "tourist_id": 19, "userrating": 4.3},
+            "user21": {"username": "user21", "tourist_id": 19, "userrating": 4.5},
+            "user32": {"username": "user32", "tourist_id": 25, "userrating": 4.7},
+            "user21": {"username": "user21", "tourist_id": 25, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user10": {"username": "user10", "res_id": 19, "userrating": 4.3},
+            "user21": {"username": "user21", "res_id": 19, "userrating": 4.5},
+            "user10": {"username": "user10", "res_id": 25, "userrating": 4.7},
+            "user21": {"username": "user21", "res_id": 25, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 18,
+        "cityname": "Bhopal",
+        "users": {
+            "user36": {"username": "user36", "userrating": 4.5},
+            "user47": {"username": "user47", "userrating": 4.2},
+            "user58": {"username": "user58", "userrating": 4.6}
+        },
+        "hotels": {
+            "user36": {"username": "user36", "hotel_id": 26, "userrating": 4.5},
+            "user47": {"username": "user47", "hotel_id": 26, "userrating": 4.2},
+            "user36": {"username": "user36", "hotel_id": 32, "userrating": 4.6},
+            "user47": {"username": "user47", "hotel_id": 32, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user58": {"username": "user58", "tourist_id": 26, "userrating": 4.5},
+            "user47": {"username": "user47", "tourist_id": 26, "userrating": 4.2},
+            "user58": {"username": "user58", "tourist_id": 32, "userrating": 4.6},
+            "user47": {"username": "user47", "tourist_id": 32, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user36": {"username": "user36", "res_id": 26, "userrating": 4.5},
+            "user47": {"username": "user47", "res_id": 26, "userrating": 4.2},
+            "user36": {"username": "user36", "res_id": 32, "userrating": 4.6},
+            "user47": {"username": "user47", "res_id": 32, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 19,
+        "cityname": "Thane",
+        "users": {
+            "user14": {"username": "user14", "userrating": 4.7},
+            "user25": {"username": "user25", "userrating": 4.3},
+            "user36": {"username": "user36", "userrating": 4.6}
+        },
+        "hotels": {
+            "user14": {"username": "user14", "hotel_id": 18, "userrating": 4.7},
+            "user25": {"username": "user25", "hotel_id": 18, "userrating": 4.3},
+            "user14": {"username": "user14", "hotel_id": 22, "userrating": 4.6},
+            "user25": {"username": "user25", "hotel_id": 22, "userrating": 4.2}
+        },
+        "tourist_places": {
+            "user36": {"username": "user36", "tourist_id": 18, "userrating": 4.7},
+            "user25": {"username": "user25", "tourist_id": 18, "userrating": 4.3},
+            "user36": {"username": "user36", "tourist_id": 22, "userrating": 4.6},
+            "user25": {"username": "user25", "tourist_id": 22, "userrating": 4.2}
+        },
+        "restaurant": {
+            "user14": {"username": "user14", "res_id": 18, "userrating": 4.7},
+            "user25": {"username": "user25", "res_id": 18, "userrating": 4.3},
+            "user14": {"username": "user14", "res_id": 22, "userrating": 4.6},
+            "user25": {"username": "user25", "res_id": 22, "userrating": 4.2}
+        }
+    },
+    {
+        "s_no": 20,
+        "cityname": "Faridabad",
+        "users": {
+            "user24": {"username": "user24", "userrating": 4.4},
+            "user35": {"username": "user35", "userrating": 4.2},
+            "user46": {"username": "user46", "userrating": 4.6}
+        },
+        "hotels": {
+            "user24": {"username": "user24", "hotel_id": 41, "userrating": 4.4},
+            "user35": {"username": "user35", "hotel_id": 41, "userrating": 4.2},
+            "user24": {"username": "user24", "hotel_id": 45, "userrating": 4.6},
+            "user35": {"username": "user35", "hotel_id": 45, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user46": {"username": "user46", "tourist_id": 41, "userrating": 4.4},
+            "user35": {"username": "user35", "tourist_id": 41, "userrating": 4.2},
+            "user46": {"username": "user46", "tourist_id": 45, "userrating": 4.6},
+            "user35": {"username": "user35", "tourist_id": 45, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user24": {"username": "user24", "res_id": 41, "userrating": 4.4},
+            "user35": {"username": "user35", "res_id": 41, "userrating": 4.2},
+            "user24": {"username": "user24", "res_id": 45, "userrating": 4.6},
+            "user35": {"username": "user35", "res_id": 45, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 21,
+        "cityname": "Rajkot",
+        "users": {
+            "user13": {"username": "user13", "userrating": 4.3},
+            "user24": {"username": "user24", "userrating": 4.6},
+            "user35": {"username": "user35", "userrating": 4.7}
+        },
+        "hotels": {
+            "user13": {"username": "user13", "hotel_id": 28, "userrating": 4.3},
+            "user24": {"username": "user24", "hotel_id": 28, "userrating": 4.6},
+            "user13": {"username": "user13", "hotel_id": 34, "userrating": 4.7},
+            "user24": {"username": "user24", "hotel_id": 34, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user35": {"username": "user35", "tourist_id": 28, "userrating": 4.3},
+            "user24": {"username": "user24", "tourist_id": 28, "userrating": 4.6},
+            "user35": {"username": "user35", "tourist_id": 34, "userrating": 4.7},
+            "user24": {"username": "user24", "tourist_id": 34, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user13": {"username": "user13", "res_id": 28, "userrating": 4.3},
+            "user24": {"username": "user24", "res_id": 28, "userrating": 4.6},
+            "user13": {"username": "user13", "res_id": 34, "userrating": 4.7},
+            "user24": {"username": "user24", "res_id": 34, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 22,
+        "cityname": "Varanasi",
+        "users": {
+            "user51": {"username": "user51", "userrating": 4.7},
+            "user62": {"username": "user62", "userrating": 4.2},
+            "user73": {"username": "user73", "userrating": 4.6}
+        },
+        "hotels": {
+            "user51": {"username": "user51", "hotel_id": 42, "userrating": 4.7},
+            "user62": {"username": "user62", "hotel_id": 42, "userrating": 4.2},
+            "user51": {"username": "user51", "hotel_id": 49, "userrating": 4.6},
+            "user62": {"username": "user62", "hotel_id": 49, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user73": {"username": "user73", "tourist_id": 42, "userrating": 4.7},
+            "user62": {"username": "user62", "tourist_id": 42, "userrating": 4.2},
+            "user73": {"username": "user73", "tourist_id": 49, "userrating": 4.6},
+            "user62": {"username": "user62", "tourist_id": 49, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user51": {"username": "user51", "res_id": 42, "userrating": 4.7},
+            "user62": {"username": "user62", "res_id": 42, "userrating": 4.2},
+            "user51": {"username": "user51", "res_id": 49, "userrating": 4.6},
+            "user62": {"username": "user62", "res_id": 49, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 23,
+        "cityname": "Meerut",
+        "users": {
+            "user41": {"username": "user41", "userrating": 4.5},
+            "user52": {"username": "user52", "userrating": 4.3},
+            "user63": {"username": "user63", "userrating": 4.7}
+        },
+        "hotels": {
+            "user41": {"username": "user41", "hotel_id": 31, "userrating": 4.5},
+            "user52": {"username": "user52", "hotel_id": 31, "userrating": 4.3},
+            "user41": {"username": "user41", "hotel_id": 36, "userrating": 4.7},
+            "user52": {"username": "user52", "hotel_id": 36, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user63": {"username": "user63", "tourist_id": 31, "userrating": 4.5},
+            "user52": {"username": "user52", "tourist_id": 31, "userrating": 4.3},
+            "user63": {"username": "user63", "tourist_id": 36, "userrating": 4.7},
+            "user52": {"username": "user52", "tourist_id": 36, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user41": {"username": "user41", "res_id": 31, "userrating": 4.5},
+            "user52": {"username": "user52", "res_id": 31, "userrating": 4.3},
+            "user41": {"username": "user41", "res_id": 36, "userrating": 4.7},
+            "user52": {"username": "user52", "res_id": 36, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 24,
+        "cityname": "Jodhpur",
+        "users": {
+            "user61": {"username": "user61", "userrating": 4.3},
+            "user72": {"username": "user72", "userrating": 4.4},
+            "user83": {"username": "user83", "userrating": 4.7}
+        },
+        "hotels": {
+            "user61": {"username": "user61", "hotel_id": 25, "userrating": 4.3},
+            "user72": {"username": "user72", "hotel_id": 25, "userrating": 4.4},
+            "user61": {"username": "user61", "hotel_id": 29, "userrating": 4.7},
+            "user72": {"username": "user72", "hotel_id": 29, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user83": {"username": "user83", "tourist_id": 25, "userrating": 4.3},
+            "user72": {"username": "user72", "tourist_id": 25, "userrating": 4.4},
+            "user83": {"username": "user83", "tourist_id": 29, "userrating": 4.7},
+            "user72": {"username": "user72", "tourist_id": 29, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user61": {"username": "user61", "res_id": 25, "userrating": 4.3},
+            "user72": {"username": "user72", "res_id": 25, "userrating": 4.4},
+            "user61": {"username": "user61", "res_id": 29, "userrating": 4.7},
+            "user72": {"username": "user72", "res_id": 29, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 25,
+        "cityname": "Coimbatore",
+        "users": {
+            "user49": {"username": "user49", "userrating": 4.4},
+            "user50": {"username": "user50", "userrating": 4.6},
+            "user61": {"username": "user61", "userrating": 4.7}
+        },
+        "hotels": {
+            "user49": {"username": "user49", "hotel_id": 12, "userrating": 4.4},
+            "user50": {"username": "user50", "hotel_id": 12, "userrating": 4.6},
+            "user49": {"username": "user49", "hotel_id": 21, "userrating": 4.7},
+            "user50": {"username": "user50", "hotel_id": 21, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user61": {"username": "user61", "tourist_id": 12, "userrating": 4.4},
+            "user50": {"username": "user50", "tourist_id": 12, "userrating": 4.6},
+            "user61": {"username": "user61", "tourist_id": 21, "userrating": 4.7},
+            "user50": {"username": "user50", "tourist_id": 21, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user49": {"username": "user49", "res_id": 12, "userrating": 4.4},
+            "user50": {"username": "user50", "res_id": 12, "userrating": 4.6},
+            "user49": {"username": "user49", "res_id": 21, "userrating": 4.7},
+            "user50": {"username": "user50", "res_id": 21, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 26,
+        "cityname": "Kochi",
+        "users": {
+            "user64": {"username": "user64", "userrating": 4.3},
+            "user75": {"username": "user75", "userrating": 4.5},
+            "user86": {"username": "user86", "userrating": 4.7}
+        },
+        "hotels": {
+            "user64": {"username": "user64", "hotel_id": 22, "userrating": 4.3},
+            "user75": {"username": "user75", "hotel_id": 22, "userrating": 4.5},
+            "user64": {"username": "user64", "hotel_id": 27, "userrating": 4.7},
+            "user75": {"username": "user75", "hotel_id": 27, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user86": {"username": "user86", "tourist_id": 22, "userrating": 4.3},
+            "user75": {"username": "user75", "tourist_id": 22, "userrating": 4.5},
+            "user86": {"username": "user86", "tourist_id": 27, "userrating": 4.7},
+            "user75": {"username": "user75", "tourist_id": 27, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user64": {"username": "user64", "res_id": 22, "userrating": 4.3},
+            "user75": {"username": "user75", "res_id": 22, "userrating": 4.5},
+            "user64": {"username": "user64", "res_id": 27, "userrating": 4.7},
+            "user75": {"username": "user75", "res_id": 27, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 27,
+        "cityname": "Madurai",
+        "users": {
+            "user52": {"username": "user52", "userrating": 4.7},
+            "user63": {"username": "user63", "userrating": 4.5},
+            "user74": {"username": "user74", "userrating": 4.6}
+        },
+        "hotels": {
+            "user52": {"username": "user52", "hotel_id": 29, "userrating": 4.7},
+            "user63": {"username": "user63", "hotel_id": 29, "userrating": 4.5},
+            "user52": {"username": "user52", "hotel_id": 34, "userrating": 4.6},
+            "user63": {"username": "user63", "hotel_id": 34, "userrating": 4.3}
+        },
+        "tourist_places": {
+            "user74": {"username": "user74", "tourist_id": 29, "userrating": 4.7},
+            "user63": {"username": "user63", "tourist_id": 29, "userrating": 4.5},
+            "user74": {"username": "user74", "tourist_id": 34, "userrating": 4.6},
+            "user63": {"username": "user63", "tourist_id": 34, "userrating": 4.3}
+        },
+        "restaurant": {
+            "user52": {"username": "user52", "res_id": 29, "userrating": 4.7},
+            "user63": {"username": "user63", "res_id": 29, "userrating": 4.5},
+            "user52": {"username": "user52", "res_id": 34, "userrating": 4.6},
+            "user63": {"username": "user63", "res_id": 34, "userrating": 4.3}
+        }
+    },
+    {
+        "s_no": 28,
+        "cityname": "Visakhapatnam",
+        "users": {
+            "user45": {"username": "user45", "userrating": 4.3},
+            "user56": {"username": "user56", "userrating": 4.7},
+            "user67": {"username": "user67", "userrating": 4.6}
+        },
+        "hotels": {
+            "user45": {"username": "user45", "hotel_id": 18, "userrating": 4.3},
+            "user56": {"username": "user56", "hotel_id": 18, "userrating": 4.7},
+            "user45": {"username": "user45", "hotel_id": 26, "userrating": 4.6},
+            "user56": {"username": "user56", "hotel_id": 26, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user67": {"username": "user67", "tourist_id": 18, "userrating": 4.3},
+            "user56": {"username": "user56", "tourist_id": 18, "userrating": 4.7},
+            "user67": {"username": "user67", "tourist_id": 26, "userrating": 4.6},
+            "user56": {"username": "user56", "tourist_id": 26, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user45": {"username": "user45", "res_id": 18, "userrating": 4.3},
+            "user56": {"username": "user56", "res_id": 18, "userrating": 4.7},
+            "user45": {"username": "user45", "res_id": 26, "userrating": 4.6},
+            "user56": {"username": "user56", "res_id": 26, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 29,
+        "cityname": "Vijayawada",
+        "users": {
+            "user33": {"username": "user33", "userrating": 4.3},
+            "user44": {"username": "user44", "userrating": 4.7},
+            "user55": {"username": "user55", "userrating": 4.6}
+        },
+        "hotels": {
+            "user33": {"username": "user33", "hotel_id": 17, "userrating": 4.3},
+            "user44": {"username": "user44", "hotel_id": 17, "userrating": 4.7},
+            "user33": {"username": "user33", "hotel_id": 21, "userrating": 4.6},
+            "user44": {"username": "user44", "hotel_id": 21, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user55": {"username": "user55", "tourist_id": 17, "userrating": 4.3},
+            "user44": {"username": "user44", "tourist_id": 17, "userrating": 4.7},
+            "user55": {"username": "user55", "tourist_id": 21, "userrating": 4.6},
+            "user44": {"username": "user44", "tourist_id": 21, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user33": {"username": "user33", "res_id": 17, "userrating": 4.3},
+            "user44": {"username": "user44", "res_id": 17, "userrating": 4.7},
+            "user33": {"username": "user33", "res_id": 21, "userrating": 4.6},
+            "user44": {"username": "user44", "res_id": 21, "userrating": 4.4}
+        }
+    },
+    {
+        "s_no": 30,
+        "cityname": "Ludhiana",
+        "users": {
+            "user17": {"username": "user17", "userrating": 4.7},
+            "user28": {"username": "user28", "userrating": 4.5},
+            "user39": {"username": "user39", "userrating": 4.6}
+        },
+        "hotels": {
+            "user17": {"username": "user17", "hotel_id": 13, "userrating": 4.7},
+            "user28": {"username": "user28", "hotel_id": 13, "userrating": 4.5},
+            "user17": {"username": "user17", "hotel_id": 20, "userrating": 4.6},
+            "user28": {"username": "user28", "hotel_id": 20, "userrating": 4.4}
+        },
+        "tourist_places": {
+            "user39": {"username": "user39", "tourist_id": 13, "userrating": 4.7},
+            "user28": {"username": "user28", "tourist_id": 13, "userrating": 4.5},
+            "user39": {"username": "user39", "tourist_id": 20, "userrating": 4.6},
+            "user28": {"username": "user28", "tourist_id": 20, "userrating": 4.4}
+        },
+        "restaurant": {
+            "user17": {"username": "user17", "res_id": 13, "userrating": 4.7},
+            "user28": {"username": "user28", "res_id": 13, "userrating": 4.5},
+            "user17": {"username": "user17", "res_id": 20, "userrating": 4.6},
+            "user28": {"username": "user28", "res_id": 20, "userrating": 4.4}
+        }
+    }
+]
