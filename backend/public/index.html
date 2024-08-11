@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide</title>
+    <style>
+        /* Add your styles here */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #333; }
+        .section { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .recommended { margin-top: 40px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tour Guide Data</h1>
+        
+        <!-- Recommended Section -->
+        <div class="recommended">
+            <h2>Recommended for You</h2>
+            <p>Recommendations will be displayed here once machine learning features are integrated.</p>
+            <!-- Placeholder for future machine learning recommendations -->
+            <div id="recommended-data">
+                <!-- Recommended data will be dynamically inserted here -->
+            </div>
+        </div>
+    
+
+    
+        <h2>General listings:</h2>
+        <div id="data-container">
+            <!-- General Listings will be loaded here -->
+        </div>
+    </div>
+
+
+    <script>
+        async function fetchData() {
+            try {
+                // Fetch general listings
+                const response = await fetch('/api/users');
+                const users = await response.json();
+                const container = document.getElementById('data-container');
+
+                users.forEach(user => {
+                    let html = `
+                        <div class="section">
+                            <h2>${user.cityname} (Rating: ${user.cityrating})</h2>
+                            <h3>Top 10 Hotels</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Hotel Name</th>
+                                        <th>Rating</th>
+                                        <th>VC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${user.top_10_hotels.map(hotel => `
+                                        <tr>
+                                            <td>${hotel.hotel_name}</td>
+                                            <td>${hotel.hotel_rating}</td>
+                                            <td>${hotel.h_vc}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                            <h3>Top 10 Restaurants</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Restaurant Name</th>
+                                        <th>Rating</th>
+                                        <th>VC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${user.top_10_restaurants.map(restaurant => `
+                                        <tr>
+                                            <td>${restaurant.restaurant_name}</td>
+                                            <td>${restaurant.restaurant_rating}</td>
+                                            <td>${restaurant.r_vc}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                            <h3>Top 10 Tourist Places</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Tourist Place</th>
+                                        <th>Rating</th>
+                                        <th>VC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${user.top_10_tourist_places.map(place => `
+                                        <tr>
+                                            <td>${place.tourist_place}</td>
+                                            <td>${place.tourist_rating}</td>
+                                            <td>${place.t_vc}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    `;
+                    container.innerHTML += html;
+                });
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchData);
+    </script>
+</body>
+</html>
